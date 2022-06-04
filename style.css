@@ -22,6 +22,9 @@ body{
 a{
     text-decoration: none;
 }
+.text-white{
+    color: var(--mainWhite);
+}
 /* end of helper classes */
 /* clearfix */
 .clearfix::before,.clearfix::after{
@@ -30,6 +33,26 @@ a{
     display: table;
 }
 /* end of clearfix */
+/* GLOBALS START */
+.section-center{
+    padding: 4rem 0;
+    width: 80vw;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.section-subtitle{
+    font-size: 2rem;
+    font-family: var(--macondoText);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing);
+    color: var(--secondaryColor);
+    /* margin-bottom: 15px; */
+}
+.section-title{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+/* GLOBALS END */
 header{
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/main-bcg.jpg)
      center/cover no-repeat fixed;
@@ -176,12 +199,7 @@ header{
 }
 /* end specials */
 /* about us started */
-.section-center{
-    padding: 4rem 0;
-    width: 80vw;
-    max-width: 1170px;
-    margin: 0 auto;
-}
+
 .about-picture{
     width: 100%;
     display: block;
@@ -200,24 +218,10 @@ header{
     opacity: 0.7;
     transform: scale(1.2);
 }
-.section-subtitle{
-    font-size: 2rem;
-    font-family: var(--macondoText);
-    text-transform: uppercase;
-    letter-spacing: var(--letterSpacing);
-    color: var(--secondaryColor);
-    /* margin-bottom: 15px; */
-
-}
-.section-title{
-    font-size: 3rem;
-    text-transform: uppercase;
-}
 .about-text{
     margin: 1rem 0;
     max-width: 26rem;
 }
-/* end of about us */
 @media screen and (min-width:992px){
     .about-img, .about-info{
         float: left;
@@ -225,3 +229,68 @@ header{
         padding: 2rem;
     }
 }
+/* end of about us */
+/* products start */
+.products{
+    background-color: var(--mainDark);
+}
+.products-info, .products-inventory{
+    padding: 2rem 0;
+}
+.products-text{
+    color: var(--mainWhite);
+    max-width: 20rem;
+    margin: 1rem 0;
+}
+.product{
+    padding: 2rem 0;
+}
+.product-img{
+    width: 100%;
+    display: block;
+    border-radius: 0.4rem;
+    margin-bottom: 2rem;
+}
+.product-title{
+    color: var(--mainWhite);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing);
+    margin-bottom: 1rem;
+}
+.product-price{
+    color: var(--secondaryColor);
+    letter-spacing: var(--letterSpacing);
+    font-family: var(--macondoText);
+}
+
+@media screen and (min-width:768px){
+   .product{
+       float: left;
+       width: 50%;
+       padding: 2rem 1rem;
+   }
+   .products-info{
+       padding: 2rem 1rem;
+   }
+}
+
+@media screen and (min-width:992px){
+    .product{
+        width: 33.3%;
+    }
+ }
+
+ @media screen and (min-width:1200px){
+    .products-info{
+        float: left;
+        width: 30%;
+    }
+    .products-inventory{
+        float: left;
+        width: 70%;
+    }
+    .product{
+        padding: 1.5rem 1rem 0 1rem;
+    }
+ }
+/* end products */
