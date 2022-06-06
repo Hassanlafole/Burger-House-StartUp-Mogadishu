@@ -89,10 +89,12 @@ header{
     outline: 0.3rem solid var(--secondaryColor);
     font-weight: bold;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 2rem;
     transition: var(--mainTransition);
+    cursor: pointer;
+    color: black;
 }
-.main-btn,.banner-btn:hover{
+.main-btn:hover,.banner-btn:hover{
     color: var(--mainWhite);
     opacity: 0.7;
     
@@ -294,3 +296,71 @@ header{
     }
  }
 /* end products */
+/* ------------------------------------------------------------------------------ */
+/* contact start */
+.contact{
+    padding: 2rem;
+}
+.contact-item{
+    margin-bottom: 3rem;
+}
+.contact-title{
+    color: var(--secondaryColor);
+    text-transform: uppercase;
+    letter-spacing: var(--letterSpacing);
+    font-family: var(--macondoText);
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+.contact-text{
+    text-transform: uppercase;
+}
+.form-control{
+    display: block;
+    border: none;
+    border-bottom: 2px solid var(--secondaryColor);
+    outline: none;
+    width: 100%;
+    font-size: 0.85rem;
+    margin: 2rem 0;
+    padding: 1.3rem 0;
+    font-weight: bold;
+}
+.form-control::placeholder{
+    text-transform: uppercase;
+    color: var(--secondaryColor);
+    letter-spacing: var(--letterSpacing);
+}
+@media screen and (min-width:992px){
+    .contact-info,.contact-form{
+        float: left;
+        width: 50%;
+        padding: 0 1rem;
+    }
+    .contact-info{
+        padding-top: 3rem;
+    }
+ }
+/* end of contact */
+/* footer start */
+.footer{
+    background: var(--mainDark);
+    text-align: center;
+}
+.social-icon{
+    color: var(--mainWhite);
+    font-size: 1.3rem;
+    margin-right: 1.3rem;
+    transition: var(--mainTransition);
+}
+.social-icon:hover{
+    color: var(--secondaryColor);
+}
+.footer-text{
+    text-transform: uppercase;
+    color: var(--mainWhite);
+    letter-spacing: var(--letterSpacing);
+    margin-top: 1rem;
+    font-size: 0.85rem;
+}
+/* end footer */
